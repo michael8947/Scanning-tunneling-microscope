@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="he">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>מערכת הנעה פיזואלקטרית</title>
+  <h1>מערכת הנעה פיזואלקטרית</h1>
+  
+    <style>
+        .container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.btn:hover {
+    background-color: #0056b3;
+}
+</style>
+</html>
+  <style>
+    body {
+      direction: rtl;
+    }
+    .container {
+      margin: 20px;
+      border: 10px solid transparent;
+      border-image: linear-gradient(to right, rgb(243, 90, 90) 0%, rgb(112, 241, 250) 25%, rgb(255, 156, 99) 25%, rgb(255, 102, 196) 50%, rgb(77, 94, 247) 50%, #0f0 75%, rgb(218, 124, 255) 75%, rgb(253, 253, 166) 100%);
+      border-image-slice: 1;
+      padding: 30px;
+    }
+    audio {
+      width: 100%;
+      margin-top: 20px;
+    }
+    #message,
+    #message2,
+    #message3 {
+      display: none;
+      margin-top: 10px;
+      padding: 10px;
+      background-color: #f0f0f0;
+      border: 1px solid #ccc;
+      text-align: center;
+    }
+    #message3 img {
+  width: 300px;
+}
+#message4 img {
+  width: 200px; /* גודל התמונה */
+  height: 200px; /* גובה התמונה */
+}
+
+    img { 
+      display: block;
+      margin: 0 auto;
+      width: 150px;
+      height: 150px;
+      margin-top: 20px;
+      animation: fadeIn 0.5s ease-out 4s forwards;
+    }
+    .quantum-effect {
+      text-align: center;
+      margin-top: 10px;
+    }
+    .timeline-step {
+      margin-top: 20px;
+    }
+    @keyframes fadeIn {
+      to {
+        opacity: 1;
+      }
+    }
+  </style>
+</head>
+<body>
+    <div class="container">
+        <audio controls>
+          <source src="WhatsApp Audio 2024-03-27 at 22.37.41.ogg" type="audio/mp3">
+          הדפדפן שלך לא תומך בניגון אודיו.
+        </audio>
+    <div id="message">
+      <img src="WhatsApp Image 2024-03-27 at 14.35.26.jpeg" alt="תמונה"><br>
+    </div>
+    <div id="message2" style="display: none;">
+      <img src="WhatsApp Image 2024-03-27 at 14.36.25.jpeg" alt="תמונה"><br>
+    </div>
+    <div id="message3">
+      <img src="WhatsApp Image 2024-03-27 at 14.37.03 (1).jpeg" alt="תמונה"><br>
+    </div>
+    <div id="message4">
+      <img src="WhatsApp Image 2024-03-27 at 14.38.40.jpeg" alt="תמונה"><br>
+    תהליך העברה:<br>
+      <span>מאפשר מחקרים ונותן למדענים לראות ולנתח את המידע בדרך יעילה ומדויקת</span>
+    </div>
+    <div id="message5">
+        <img src="Screenshot 2024-03-27 230141.png" alt="תמונה"><br>
+    </div>
+    <div id="message6">
+      <img src="WhatsApp Image 2024-03-27 at 14.41.48.jpeg" alt="תמונה">
+    </div>
+    <a href="end.html" class="btn">המשך לסוף</a>
+  <script>
+    const audio = document.querySelector('audio');
+    const messageElement = document.getElementById('message');
+    const messageElement2 = document.getElementById('message2');
+    const messageElement3 = document.getElementById('message3');
+    const messageElement4 = document.getElementById('message4');
+    const messageElement5 = document.getElementById('message5');
+    const messageElement6 = document.getElementById('message6');
+    audio.addEventListener('timeupdate', function () {
+      const currentTime = audio.currentTime;
+
+      if (currentTime >= 1 && currentTime < 5) {
+        messageElement.style.display = 'block';
+      } else {
+        messageElement.style.display = 'none';
+      }
+
+      if (currentTime >= 5 && currentTime < 7) {
+        messageElement2.style.display = 'block';
+      } else {
+        messageElement2.style.display = 'none';
+      }
+
+      if (currentTime >= 7 && currentTime < 12) {
+        messageElement3.style.display = 'block';
+      } else {
+        messageElement3.style.display = 'none';
+      }
+      if (currentTime >= 12 && currentTime < 15) {
+        messageElement4.style.display = 'block';
+      } else {
+        messageElement4.style.display = 'none';
+      }
+      if (currentTime >= 15 && currentTime < 21) {
+        messageElement5.style.display = 'block';
+      } else {
+        messageElement5.style.display = 'none';
+      }
+      if (currentTime >= 21 && currentTime < 23) {
+        messageElement6.style.display = 'block';
+      } else {
+        messageElement6.style.display = 'none';
+      }
+    });
+  </script>
+</body>
+</html>
